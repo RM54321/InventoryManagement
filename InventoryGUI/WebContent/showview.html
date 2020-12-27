@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Management GUI</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>  
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+</head>
+<body>
+<header>
+<a href="#" class="logo">
+     <img src="assets/images/logo.png" alt="Logo" />
+</a>
+</header>
+<main>
+<p class="title">
+Manage Inventory Items
+</p>
+
+<div id="popDiv" class="ontop">
+			<div id="popup">
+					<form action="http://localhost:8081/inventories/items/create" method="POST" id="addForm">
+																	  <div>
+																	  
+																	    <input name="itemName" id="itemName" type="text" required=required placeholder="Item Name" maxlength=10>
+																	  </div>
+																	  <div>
+																	   
+																	    <input name="itemCount" id="itemCount" type="text" placeholder="Count" required=required>
+																	  </div>
+																	  <div>
+																	 
+																	    <input name="itemDesc" id="itemDesc" type="text" placeholder="Description" required=required>
+																	  </div>
+																	  <div>
+																	    <input type="submit" value="submit" class="btn_submit">
+																	  </div>
+					</form>
+											
+						<a href="#" onClick="hide('popDiv')" id="close_id">Close</a>
+						
+				<span id="msgadd"></span>
+			</div><!-- popup--> 
+</div>
+	<a href="#" onClick="pop('popDiv','0')" class="link_item" id="add_id">Add Item</a>
+
+<div id="popDivEdit" class="ontopedit">
+				<div id="popupedit">
+					<form action="" method="POST" id="editForm">
+					<input type="hidden" id="itemId" name="itemId">
+																	  <div>
+																	  
+																	    <input name="itemName" id="editName" type="text" placeholder="Item Name" required=required  maxlength=10>
+																	  </div>
+																	  <div>
+																	  
+																	    <input name="itemCount" id="editCount" type="number" placeholder="Item Count" required=required>
+																	  </div>
+																	  
+																	    <input name="itemDesc" id="editDesc" type="text" placeholder="Description" required=required>
+																	  </div>
+																	  <div>
+																	    <input type="submit" value="submit" class="btn_edit">
+																	  </div>
+					</form>
+													
+						<a href="#" onClick="hide('popDivEdit')" class="link_edit_close">Close</a>
+				<span id="msgbox"></span>
+</div><!-- popup--> 
+</div>
+
+
+<div id="container">
+<table id="inventory_tbl" class="display">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Count</th>
+                <th>Desc</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        </table>
+</div>
+</main>
+</body>
+<script type='text/javascript' src='js/inventory.js'></script>
+</html>
