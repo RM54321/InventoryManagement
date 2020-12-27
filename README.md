@@ -9,7 +9,7 @@ After installing node.js,use the node package manager(npm) to run the sass files
 
 npm run scss
 
-The backend of the application(InventoryApi) should be started .The Rest calls should be running in the system .
+Postgre database should be installed in the system.Next,the backend of the application(InventoryApi) should be started .The Rest calls can be seen running in the system .
 
 ## Usage
 
