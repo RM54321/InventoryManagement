@@ -4,13 +4,13 @@ Inventory Management is a GUI project creatd using HTML 5,Sass,Javascript and Aj
 The application provides the interface for users to add new items to the inventory and also update and delete the items.PostGre is used as the database for the backend application.The interface also has search and sort items feature and pagination is also incorporated .
 
 ## Screenshots
-Inventory Home Page(View All Items)
+#### Inventory Home Page(View All Items)
 ![HomePage](https://user-images.githubusercontent.com/29458723/103462898-84496380-4cf6-11eb-9fea-4dc386e5f114.png)
 
-Add New Item Popup
+#### Add New Item Popup
 ![AddItems](https://user-images.githubusercontent.com/29458723/103462896-801d4600-4cf6-11eb-9490-cd6fb071889e.png)
 
-Search Item
+#### Search Item
 ![Search](https://user-images.githubusercontent.com/29458723/103462900-86132700-4cf6-11eb-960d-97f69ca52c7c.png)
 
 
