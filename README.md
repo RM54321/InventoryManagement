@@ -1,6 +1,6 @@
 # InventoryManagement
 
-Inventory Management is a GUI project creatd using HTML 5,Sass,Javascript and Ajax. It connects with a separate spring boot project(InventoryApi) via REST services.
+Inventory Management is a GUI project created using HTML 5,Sass,Javascript and Ajax. It connects with a separate spring boot project(InventoryApi) via REST services.
 The application provides the interface for users to add new items to the inventory and also update and delete the items.PostGre is used as the database for the backend application.The interface also has search and sort items feature and pagination is also incorporated .
 
 ## Screenshots
