@@ -13,8 +13,6 @@ Add New Item Popup
 Search Item
 ![Search](https://user-images.githubusercontent.com/29458723/103462900-86132700-4cf6-11eb-960d-97f69ca52c7c.png)
 
-Items WebService
-![webservice](https://user-images.githubusercontent.com/29458723/103462902-87dcea80-4cf6-11eb-977f-6b667067dce4.png)
 
 ## Installation
 
